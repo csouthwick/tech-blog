@@ -37,3 +37,7 @@ h3 a:hover{
 .btn-no-style:hover{
   color: #cbd3da !important
 }
+
+.post .card-text{
+  white-space: pre-wrap;
+}
