@@ -1,0 +1,21 @@
+<article class="card border-dark">
+  <h3 class="card-header bg-dark text-light">Edit Post</h3>
+  <form class="edit-post-form card-body">
+    <div class="form-group">
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" class="form-control" value="{{post.title}}" />
+    </div>
+    <div class="form-group">
+      <label for="post-content">Content</label>
+      <textarea id="post-content" name="post-content" class="form-control">{{post.post_content}}</textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-secondary d-block w-100">Update Post</button>
+    </div>
+    <div class="form-group mb-0">
+      <button type="button" class="btn btn-secondary d-block w-100 delete-post-btn">Delete</button>
+    </div>
+  </form>
+</article>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

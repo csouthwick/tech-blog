@@ -1,0 +1,18 @@
+{{#if posts.length}}
+<section>
+  <h2 class="text-light">Your Dashboard</h2>
+  <ul class="list-group">
+    {{#each posts as |post|}}
+    <li class="mb-3 rounded list-group-item p-0 border-0">
+      <a href="/dashboard/edit/{{post.id}}" class="btn btn-dark text-left d-block">
+        {{post.title}}
+        <span class="float-right">{{format_date created_at}}</span>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+<div class="text-center">
+  <a href="/dashboard/new" class="btn btn-dark">New Post</a>
+</div>
