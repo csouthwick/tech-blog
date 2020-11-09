@@ -17,7 +17,7 @@ const sess = {
   store: new SequelizeStore({ db: sequelize })
 };
 
-const hbs = exphbs.create({ });
+const hbs = exphbs.create({});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -25,6 +25,9 @@ app.use(session(sess));
 app.use(express.static(path.join(__dirname, 'public')));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
+const routes = require('./controllers');
+app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
