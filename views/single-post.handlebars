@@ -1,6 +1,8 @@
 {{> post-info post}}
 
+{{#if post.comments.length}}
 {{> comments post.comments}}
+{{/if}}
 
 {{#if loggedIn}}
 <div class="card border-dark">
