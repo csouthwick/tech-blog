@@ -35,4 +35,4 @@ npm start
 
 [View the live site on Heroku](https://powerful-tundra-10480.herokuapp.com/)
 
-![screenshot of the live website](./assets/images/the-tech-blog.png)]
+![screenshot of the live website](./assets/images/the-tech-blog.png)
