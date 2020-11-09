@@ -1,0 +1,12 @@
+<div class="comments post card border-dark mb-4">
+  <h3 class="card-header bg-dark text-light">Comments</h3>
+  <div class="card-body">
+    {{#each this}}
+    <p class="comment">
+      {{comment_text}}
+      <br />
+      - {{user.username}}, {{format_date created_at}}
+    </p>
+    {{/each}}
+  </div>
+</div>
