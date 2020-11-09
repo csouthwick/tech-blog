@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/stylesheets/style.css" </head>
+
+  <body>
+    <header class="mb-4 bg-dark text-light">
+      <nav class="navbar navbar-expand">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-light" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="/dashboard">Dashboard</a></li>
+          {{#if loggedIn}}
+          <li class="nav-item"><button id="logout" class="btn-no-style nav-link text-light">Logout</button></li>
+          {{else}}
+          <li class="nav-item"><a class="nav-link text-light" href="/login">Login</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+      <h1 class="pb-4 pr-4 pl-4 m-0">The Tech Blog</h1>
+    </header>
+    <main class="container">
+      {{{ body }}}
+    </main>
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
+
+</html>
