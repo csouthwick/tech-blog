@@ -1,19 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body{
   background:#5387a7;
 }
+
 h3 a,
 h3 a:hover{
   color: #fff;
   text-decoration: none;
   transition: opacity 200ms;
 }
+
 h3 a:hover{
   opacity: .75;
 }
 
-.post{
+.card{
+  background: rgba(255,255,255,.9);
   border-width: 3px;
 }
-.post .card-header{
+
+.card-header,
+.card-header:first-child{
   border-radius: 0;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+}
+.btn-no-style:hover{
+  color: #cbd3da !important
 }
