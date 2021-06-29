@@ -1,7 +1,7 @@
 # Tech Blog
 
 ## Description
-A demonstration of a simple tech blog with the ability to create short posts and comments (max 255 characters each)
+Demonstration of a simple tech blog with the ability to create short posts and comments (max 255 characters each)
 
 ## Made with
 - Node.js
