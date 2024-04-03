@@ -28,7 +28,5 @@ Run
 npm start
 ```
 
-# Live Website
-[View the live site on Heroku](https://powerful-tundra-10480.herokuapp.com/)
-
+# Screenshot
 ![screenshot of the live website](./assets/images/the-tech-blog.png)
